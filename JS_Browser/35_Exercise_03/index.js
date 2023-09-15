@@ -6,8 +6,5 @@ let jokes_array = ["Why do programmers prefer dark mode, Because light attracts 
 let index = Math.floor(Math.random() * (jokes_array.length - 1))
 console.log(index)
 
-// let randomjoke = document.getElementById("randomjoke")
-// randomjoke.innerHTML = jokes_array[index].randomjoke
-
 let randomjoke = document.getElementById("randomjoke");
 randomjoke.innerHTML = jokes_array[index];
