@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="text-white body-font">
+      <div
+        class="container bg-blue-900 mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <span class="ml-3 text-white text-3xl">Digital Clock</span>
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        ></nav>
+        <button
+          id="exercise"
+          class="inline-flex items-center bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-700 rounded text-base mt-4 md:mt-0"
+        >
+          View Exercise Question
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <h1 class="flex justify-center text-white text-5xl pt-20">
+      Digital Clock Exercise Solution
+    </h1>
+
+    <div class="container">
+      <div id="clock"></div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <p>Copyright &copy; 2023 M.Raahim Rizwan. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
