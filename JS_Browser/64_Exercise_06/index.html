@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/to-do-list.png" />
+    <title>Video 64</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-r from-blue-500 to-purple-500">
+    <!-- Header -->
+    <header class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <img src="./images/to-do-list.png" alt="icon" class="w-10" />
+          <span class="ml-3 text-xl text-white">TODO App</span>
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a class="mr-5 text-white cursor-pointer">Home</a>
+          <a class="mr-5 text-white cursor-pointer">About</a>
+        </nav>
+        <button
+          id="button"
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+        >
+          Watch the Exercise Video
+        </button>
+      </div>
+    </header>
+    <div class="container mt-[200px]">
+      <h1 class="flex justify-center mt-[20px] text-4xl text-white">
+        TODO APP
+      </h1>
+      <input
+        type="text"
+        class="block m-auto rounded-full mt-[30px] p-[10px] border-white text-lg"
+        id="input"
+        placeholder="Enter a task"
+      />
+      <div
+        id="alerts"
+        class="flex justify-center mt-[20px] text-3xl text-white"
+      ></div>
+      <div id="notes" class="flex justify-center mt-[20px] text-2xl text-white"></div>
+    </div>
+    <div id="buttons" class="flex justify-center mt-[20px]">
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mr-[10px] border border-blue-700 rounded"
+        onclick="addNote()"
+      >
+        Add Note
+      </button>
+      <button
+        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 mr-[10px] border border-red-700 rounded"
+        onclick="removeNote()"
+      >
+        Delete All Notes
+      </button>
+      <button
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mr-[10px] border border-green-700 rounded"
+        onclick="showNotes()"
+      >
+        Show Notes
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
