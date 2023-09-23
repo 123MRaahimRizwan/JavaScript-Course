@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video 74</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Password Generator</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="mt-3 text-white">Password Generator</h1>
+      <div class="checks">
+        <p class="mt-3 text-white">Please select your desired field:</p>
+        <input
+          type="number"
+          id="totalCharacters"
+          placeholder="Password Length"
+          min="2"
+          max="20"
+        />
+
+        <div class="form-check text-white">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="superStrongPassword"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Super Strong Password
+          </label>
+        </div>
+        <div class="form-check text-white">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="strongPassword"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Strong Password
+          </label>
+        </div>
+        <div class="form-check text-white">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="weakPassword"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Weak Password
+          </label>
+        </div>
+        <div class="form-check text-white">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="funnyPassword"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Funny Password
+          </label>
+        </div>
+      </div>
+      <button type="button" id="generateButton" class="btn btn-primary mt-3">
+        Generate Password
+      </button>
+      <button type="button" id="exerciseButton" class="btn btn-primary mt-3">
+        Watch the Exercise Video
+      </button>
+      <div id="password" class="mt-3 text-white"></div>
+    </div>
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
