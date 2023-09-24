@@ -1,30 +1,30 @@
-// message = "Good Global";
+message = "Good Global";
 
-// function hello() {
-//   let message = "Good Morning";
-//   // let message = "Good Afternoon";
-//   console.log(message);
-//   let c = function hello2() {
-//     console.log("I am c" + message);
-//   };
-//   return c;
-// }
+function hello() {
+  let message = "Good Morning";
+  // let message = "Good Afternoon";
+  console.log(message);
+  let c = function hello2() {
+    console.log("I am c" + message);
+  };
+  return c;
+}
 
-// c = hello();
-// c();
+c = hello();
+c();
 
-// // MDN Docs Example
+// MDN Docs Example
 
-// function init() {
-//   var name = "Mozilla";
-//   function displayName() {
-//     console.log(name);
-//   }
-//   return displayName;
-// }
+function init() {
+  var name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
 
-// let d = init();
-// d();
+let d = init();
+d();
 
 // Practice Func
 
