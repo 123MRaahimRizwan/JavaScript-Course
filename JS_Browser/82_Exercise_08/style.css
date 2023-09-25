@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Pathway+Gothic+One&family=Poppins:wght@400;700&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgb(5, 221, 249), rgb(26, 129, 246));
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container #content.disable {
+  opacity: 0.6;
+  pointer-events: none;
+}
